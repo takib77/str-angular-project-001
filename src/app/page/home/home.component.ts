@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { Animal } from 'src/app/model/animal';
+import { AnimalCard } from 'src/app/model/animalCard';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  @Input() animals: Animal[] =[];  
+  animalCard: AnimalCard = new AnimalCard();
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

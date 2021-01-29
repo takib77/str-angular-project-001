@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Animal } from 'src/app/service/animal'
+import { Animal } from 'src/app/model/animal'
 @Injectable({
   providedIn: 'root'
 })
@@ -98,4 +98,5 @@ export class ProductService {
     endangered: false
   },
   ]
+  constructor() {}
 }
