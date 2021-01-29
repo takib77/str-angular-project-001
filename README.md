@@ -1,4 +1,4 @@
-# Angular Első Csapatmunka ---
+# Angular Első Csapatmunka
 
 ## Feladat
 Készítsetek egy Webshopot Angular keretrendszer segítségével.
@@ -115,4 +115,30 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 
 
-Hajrá!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Desszi is belepiszkított, most megint.
+
