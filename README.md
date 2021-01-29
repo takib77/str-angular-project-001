@@ -1,4 +1,4 @@
-# Angular Első Csapatmunka
+# Angular Első Csapatmunka ---
 
 ## Feladat
 Készítsetek egy Webshopot Angular keretrendszer segítségével.
