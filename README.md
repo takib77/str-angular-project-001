@@ -111,34 +111,3 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 ## Sok sikert!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Desszi is belepiszkított, most megint.
-
