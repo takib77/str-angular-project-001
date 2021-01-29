@@ -112,4 +112,37 @@ ne kelljen vele annyit dolgozni a stílusnál.
 ## Sok sikert!
 
 
+<<<<<<< HEAD
 Ági yess!!
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Desszi is belepiszkított, most megint.
+
+>>>>>>> d62887995b427c883965e5599f12f5a493ea2198
