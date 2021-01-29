@@ -111,7 +111,3 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 ## Sok sikert!
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 698716bef493f714a48ccf452e4a6e77027ce2e2
