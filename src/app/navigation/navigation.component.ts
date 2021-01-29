@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService, IMenuItem } from './service/config.sevice';
+import { ConfigService, IMenuItem } from '../service/config.service';
 
 @Component({
   selector: 'app-navigation',

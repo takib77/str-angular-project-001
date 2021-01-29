@@ -128,6 +128,11 @@
           }
         }
       }
+<<<<<<< HEAD
+    }},
+  "defaultProject": "str-angular-project001"
+}
+=======
     }
   },
   "defaultProject": "str-angular-project001",
@@ -135,3 +140,4 @@
     "analytics": "67a7c093-6ac7-44cf-85f2-a8b357f0a356"
   }
 }
+>>>>>>> d62887995b427c883965e5599f12f5a493ea2198
