@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # Angular Első Csapatmunka
+=======
+# Angular Első Csapatmunka ---
+>>>>>>> Stashed changes
 
 ## Feladat
 Készítsetek egy Webshopot Angular keretrendszer segítségével.
@@ -111,3 +115,8 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 ## Sok sikert!
 
+
+
+
+
+Hajrá!!!
