@@ -140,7 +140,5 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 
 
-
-
-Desszi is belepiszkít.
+Desszi is belepiszkított, most megint.
 
