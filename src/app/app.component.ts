@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Animal } from './model/animal';
+import { ProductService } from './service/product.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'str-angular-project001';
+  animalList: Animal[] = this.productService.list;
 }

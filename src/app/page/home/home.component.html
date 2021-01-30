@@ -1,1 +1,13 @@
-<p>home works!</p>
+
+<table>
+    <th>
+        Animals
+    </th>
+    <tbody>
+            <tr *ngFor="let animalCard of animals">
+                <td> {{ animalCard.name }}</td>       
+                <td> {{ animalCard.price }}</td>       
+                <td> {{ animalCard.endangered }}</td>
+            </tr>            
+    </tbody>
+</table>
