@@ -8,6 +8,9 @@ import { ProductService } from './service/product.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'str-angular-project001';
+  title = 'ZOOland';
   animalList: Animal[] = this.productService.list;
+
+  constructor(
+    private productService: ProductService) { }
 }
