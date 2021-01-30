@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AnimalCard } from '../common/animal-card';
 import { Animal } from '../model/animal';
 
 @Injectable({
@@ -99,4 +100,28 @@ export class ProductService {
   ]
 
   constructor() { }
+
+  topFiveDangeredAnimal: Animal[] = this.list.filter(animal => animal.endangered)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 5);
+
+  topFiveAnimalInCategory(id: number): Animal[] {
+
+    return this.list.filter(animal => animal.id == id)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
+  }
+
+  getAnimalCard(id: number): AnimalCard {
+    const myAnimal = this.list.find(item => item.id == id);
+    const myAnimalCard = new AnimalCard();
+    myAnimalCard.id = myAnimal.id;
+    myAnimalCard.name = myAnimal.name;
+    myAnimalCard.image = myAnimal.image;
+    myAnimalCard.price = myAnimal.price;
+    myAnimalCard.endangered = myAnimal.endangered;
+
+    return myAnimalCard;
+  }
+
 }
