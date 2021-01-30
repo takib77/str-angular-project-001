@@ -9,8 +9,9 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class HomeComponent implements OnInit {
 
-  product = this.productService.getAnimalCard(1);
-  productList: Animal[] = this.productService.list;
+  animal = this.productService.getAnimalCard(1);
+
+  animalList: Animal[] = this.productService.list;
 
   constructor(
     private productService: ProductService
