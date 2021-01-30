@@ -1,4 +1,3 @@
-
 export class AnimalCard {
     id: number = 0;
     name: string = '';

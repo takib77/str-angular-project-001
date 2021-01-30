@@ -1,4 +1,3 @@
-
 export class Animal {
     id: number = 0;
     name: string = '';
@@ -12,7 +11,7 @@ export class Animal {
             this.name = properties.name || '';
             this.image = properties.image || '';
             this.price = properties.price || 0;
-            this.endangered = properties.endangered;
+            this.endangered = properties.endangered || false;
         }
     }
 }

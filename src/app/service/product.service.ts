@@ -7,12 +7,6 @@ import { Animal } from 'src/app/model/animal'
 export class ProductService {
 
   list: Animal[] = [{
-    id: 0,
-    name: "Barna Medve",
-    image: "src/assets/img/barnamedve.jpg",
-    price: 100000,
-    endangered: true
-  }, {
     id: 1,
     name: "Leveli Beka",
     image: "src/assets/img/beka.jpg",
@@ -96,7 +90,13 @@ export class ProductService {
     image: "src/assets/img/wombat.jpg",
     price: 189000,
     endangered: false
-  },
-  ]
-  constructor() {}
+  }, {
+    id: 14,
+    name: "Barna Medve",
+    image: "src/assets/img/barnamedve.jpg",
+    price: 100000,
+    endangered: true
+  }];
+
+  constructor() { }
 }
