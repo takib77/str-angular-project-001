@@ -4,7 +4,7 @@ export class Animal {
     name: string = '';
     image: string = '';
     price: number = 0;
-    endangered: boolean = false;
+    endangered: any = false;
 
     constructor(properties?: Animal) {
         if (properties) {

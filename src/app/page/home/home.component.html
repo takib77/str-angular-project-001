@@ -1,2 +1,17 @@
 <h1>ZOOland</h1>
-<app-animal-list [animalList]="animalList"></app-animal-list>
+<h2>Endangered Animals</h2>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let animal of topFiveEndangeredAnimal">
+            <app-animal-card [animal]="animal"></app-animal-card>
+        </div>
+    </div>
+</div>
+<h2>Category Animals</h2>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let animal of topFiveFromCategory">
+            <app-animal-card [animal]="animal"></app-animal-card>
+        </div>
+    </div>
+</div>

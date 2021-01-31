@@ -4,9 +4,9 @@
             <div class="card" style="width: 18rem;">
                 <img src="{{ animal.image }}" class="card-img-top " alt="animal">
                 <div class="card-body">
-                    <p>{{ animal.name }}</p>
-                    <p>{{ animal.price }}</p>
-                    <p>{{ animal.endangered }}</p>
+                    <p class="d-flex justify-content-center"><strong>{{ animal.name }}</strong></p>
+                    <p class="d-flex justify-content-center">Price: {{ animal.price }} HUF</p>
+                    <p class="d-flex justify-content-center text-danger">{{ animal.endangered }}</p>
                 </div>
             </div>
         </div>

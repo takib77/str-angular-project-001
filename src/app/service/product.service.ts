@@ -9,7 +9,7 @@ export class ProductService {
   list: Animal[] = [{
     id: 1,
     catId: 1,
-    name: "Leveli Beka",
+    name: "Leveli Béka",
     image: "assets/img/beka.jpg",
     price: 10000,
     endangered: false
@@ -360,8 +360,8 @@ export class ProductService {
   },  {
     id: 50,
     catId: 7,
-    name: "",
-    image: "assets/img/varanusz.jpg",
+    name: "Földi malac",
+    image: "assets/img/foldi-malac.jpg",
     price: 102000,
     endangered: true
   }
