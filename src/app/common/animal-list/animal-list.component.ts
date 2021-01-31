@@ -9,11 +9,8 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class AnimalListComponent implements OnInit {
 
-  @Input() animalList: Animal[] = this.productService.list;
-
-  constructor(
-    private productService: ProductService
-  ) { }
+  @Input() animalList: Animal[]
+  constructor() { }
 
   ngOnInit(): void {
   }
