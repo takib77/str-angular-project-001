@@ -1,2 +1,13 @@
-<h1>ZOOland</h1>
-<app-animal-list [animalList]="animalList"></app-animal-list>
+<div class="container">
+    <h1 class="d-flex justify-content-center my-3">ZOOland</h1>
+    <div class="d-flex justify-content-center">
+        <form class="form-inline">
+            <input class="form-control" type="text" placeholder="Search...(comming soon)">
+            <button class="btn btn-success">SEARCH</button>
+        </form>
+    </div>
+    <h2 class="text-center mt-5 mb-3">Our Animals</h2>
+    <div class="row">
+        <app-animal-list [animalList]="animalList"></app-animal-list>
+    </div>
+</div>

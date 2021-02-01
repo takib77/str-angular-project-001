@@ -9,20 +9,14 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class HomeComponent implements OnInit {
 
+  animalsInDanger: Animal[] = this.productService.fiveEndangeredAnimal();
+  animalsInCategory: Animal[] = this.productService.fiveFromCategory();
+
   constructor(
-    private productService : ProductService
+    private productService: ProductService
   ) { }
 
   ngOnInit(): void {
   }
-   topFiveEndangeredAnimal: Animal[] = this.productService.list
-    .filter( animal => animal.endangered)
-    .sort( () => 0.5 - Math.random())
-    .slice(0, 5);
-
-    topFiveFromCategory: Animal[] = this.productService.list
-    .filter( animal => animal.catId)
-    .sort( () => 0.5 - Math.random())
-    .slice(0, 5);
 
 }

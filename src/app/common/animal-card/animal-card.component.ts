@@ -11,18 +11,11 @@ export class AnimalCardComponent implements OnInit {
 
   @Input() animal: Animal = new Animal();
 
-  constructor(private productService: ProductService) { }
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
   }
-
-  endangeredAnimals = this.productService.list
-  .forEach( animal => {
-    if(animal.endangered===true) {
-      animal.endangered="Endangered";
-    } else if (animal.endangered===false) {
-      animal.endangered="Not endangered";
-    }
-  })
 
 }

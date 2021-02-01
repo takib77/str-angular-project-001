@@ -9,8 +9,6 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class Cat02Component implements OnInit {
 
-  animal = this.productService.getAnimalCard(1);
-
   animalList: Animal[] = this.productService.list;
 
   constructor(
