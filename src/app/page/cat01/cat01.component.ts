@@ -9,11 +9,13 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class Cat01Component implements OnInit {
 
-  constructor(private productService: ProductService) { }
+  animalsInDanger: Animal[] = this.productService.allEndangeredAnimal();
+
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  topFiveEndangeredAnimal: Animal[] = this.productService.list
-  .filter( animal => animal.endangered)
 }

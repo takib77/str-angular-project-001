@@ -9,6 +9,7 @@ import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { AnimalCardComponent } from './common/animal-card/animal-card.component';
 import { AnimalListComponent } from './common/animal-list/animal-list.component';
+import { EndangeredPipe } from './pipe/endangered.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AnimalListComponent } from './common/animal-list/animal-list.component'
     Cat02Component,
     HomeComponent,
     AnimalCardComponent,
-    AnimalListComponent
+    AnimalListComponent,
+    EndangeredPipe,
   ],
   imports: [
     BrowserModule,

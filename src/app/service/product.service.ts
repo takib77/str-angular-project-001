@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { AnimalCard } from '../common/animal-card';
 import { Animal } from '../model/animal';
 
 @Injectable({
@@ -229,14 +228,14 @@ export class ProductService {
     name: "Patkány kenguru",
     image: "assets/img/patkany-kenguru.jpg",
     price: 100000,
-    endangered: true
+    endangered: false
   }, {
     id: 32,
     catId: 3,
     name: "Selyem majom",
     image: "assets/img/selyem-majom.jpg",
     price: 100000,
-    endangered: true
+    endangered: false
   }, {
     id: 33,
     catId: 3,
@@ -258,7 +257,7 @@ export class ProductService {
     image: "assets/img/t-rak.jpg",
     price: 102000,
     endangered: true
-  
+
   }, {
     id: 36,
     catId: 7,
@@ -266,98 +265,98 @@ export class ProductService {
     image: "assets/img/varanusz.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 37,
     catId: 7,
     name: "Vizi disznó",
     image: "assets/img/vizi-diszno.jpg",
     price: 102000,
-    endangered: true
-  },  {
+    endangered: false
+  }, {
     id: 38,
     catId: 7,
     name: "Zebra",
     image: "assets/img/zebra.jpg",
     price: 108000,
     endangered: true
-  },  {
+  }, {
     id: 39,
     catId: 7,
     name: "Tigris",
     image: "assets/img/tigris.jpg",
     price: 102000,
-    endangered: true
-  },  {
+    endangered: false
+  }, {
     id: 40,
     catId: 7,
     name: "Zsiráf",
     image: "assets/img/zsiraf.jpg",
     price: 102000,
-    endangered: true
-  },  {
+    endangered: false
+  }, {
     id: 41,
     catId: 7,
     name: "Arapamia",
     image: "assets/img/arapaima.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 42,
     catId: 7,
     name: "Csörgőkigyó",
     image: "assets/img/cs-kigyo.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 43,
     catId: 7,
     name: "Ecsetfejű disznó",
     image: "assets/img/ecsetfeju-diszo.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 44,
     catId: 7,
     name: "Feketepárduc",
     image: "assets/img/f-parduc.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 45,
     catId: 7,
     name: "Gém",
     image: "assets/img/gem.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 46,
     catId: 7,
     name: "Varánusz",
     image: "assets/img/varanusz.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 47,
     catId: 7,
     name: "Hangyász sün",
     image: "assets/img/hangyasz-sun.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 48,
     catId: 7,
     name: "Kenguru",
     image: "assets/img/kenguru.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 49,
     catId: 7,
     name: "Krokodil",
     image: "assets/img/krokodil.jpg",
     price: 102000,
     endangered: true
-  },  {
+  }, {
     id: 50,
     catId: 7,
     name: "Földi malac",
@@ -369,17 +368,23 @@ export class ProductService {
 
   constructor() { }
 
-  getAnimalCard(catId: number): AnimalCard {
-    const myAnimal = this.list.find(item => item.catId == catId);
-    const myAnimalCard = new AnimalCard();
-    myAnimalCard.id = myAnimal.id;
-    myAnimalCard.catId = myAnimal.catId;
-    myAnimalCard.name = myAnimal.name;
-    myAnimalCard.image = myAnimal.image;
-    myAnimalCard.price = myAnimal.price;
-    myAnimalCard.endangered = myAnimal.endangered;
+  allEndangeredAnimal(): Animal[] {
+    return this.list
+      .filter(animal => animal.endangered);
+  }
 
-    return myAnimalCard;
+  fiveEndangeredAnimal(): Animal[] {
+    return this.list
+      .filter(animal => animal.endangered)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
+  }
+
+  fiveFromCategory(): Animal[] {
+    return this.list
+      .filter(animal => animal.catId)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
   }
 
 }
