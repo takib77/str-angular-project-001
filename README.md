@@ -115,30 +115,4 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Desszi is belepiszkított, most megint.
-
+Hajrá!!!

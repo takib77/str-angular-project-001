@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal } from 'src/app/model/animal';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-cat02',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cat02Component implements OnInit {
 
-  constructor() { }
+  animalList: Animal[] = this.productService.list;
 
+  constructor(
+    private productService: ProductService
+  ) { }
   ngOnInit(): void {
   }
 
