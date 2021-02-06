@@ -116,7 +116,7 @@
       "id": 14,
       "catid": 3,
       "name": "Barna Medve",
-      "image": "assets/img/bar"name"dve.jpg",
+      "image": "assets/img/barnamedve.jpg",
       "price": 100000,
       "endangered": true
     },
@@ -243,8 +243,8 @@
     {
       "id": 30,
       "catid": 3,
-      "name": "Óriás v"id"ra",
-      "image": "assets/img/oriasv"id"ra.jpg",
+      "name": "Óriás vidra",
+      "image": "assets/img/oriasvidra.jpg",
       "price": 100000,
       "endangered": true
     },
