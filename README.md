@@ -110,9 +110,3 @@ ne kelljen vele annyit dolgozni a stílusnál.
 - A lista nézetben lehessen rendezni is a termék kártyákat, mondjuk ár, név, akció, kiemelt alapján.
 
 ## Sok sikert!
-
-
-
-
-
-Hajrá!!!
