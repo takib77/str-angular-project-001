@@ -17,6 +17,7 @@ export class ConfigService {
     { text: 'Home', link: '/', icon: 'home' },
     { text: 'EndangeredAnimals', link: '/cat01' },
     { text: 'OurAnimals', link: '/cat02' },
+    { text: 'Admin', link: '/cat03' },
   ];
 
   constructor() { }
