@@ -10,6 +10,8 @@ import { HomeComponent } from './page/home/home.component';
 import { AnimalCardComponent } from './common/animal-card/animal-card.component';
 import { AnimalListComponent } from './common/animal-list/animal-list.component';
 import { EndangeredPipe } from './pipe/endangered.pipe';
+import { AdminComponent } from './common/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { EndangeredPipe } from './pipe/endangered.pipe';
     AnimalCardComponent,
     AnimalListComponent,
     EndangeredPipe,
+    AdminComponent,
+    DataEditorComponent,
   ],
   imports: [
     BrowserModule,
