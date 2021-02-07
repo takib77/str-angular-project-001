@@ -7,7 +7,6 @@ import { Animal } from '../model/animal';
   providedIn: 'root'
 })
 export class ProductService {
-  sourceURL: string = 'http://localhost:3000/list';
 
   list: Animal[] = [
     {
@@ -422,12 +421,7 @@ export class ProductService {
 
 
   constructor(
-    private http: HttpClient
   ) { }
-
-  readAllData(): Observable<Animal[]> {
-    return this.http.get<Animal[]>(this.sourceURL);
-  }
 
   allEndangeredAnimal(): Animal[] {
     return this.list
@@ -442,8 +436,9 @@ export class ProductService {
   }
 
   fiveFromCategory(): Animal[] {
+    let random = Math.floor(Math.random() * 6) + 1;
     return this.list
-      .filter(animal => animal.catId === Math.floor(Math.random() * 6) + 1)
+      .filter(animal => animal.catId === random)
       .sort(() => 0.5 - Math.random())
       .slice(0, 5);
   }
