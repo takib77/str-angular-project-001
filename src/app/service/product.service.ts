@@ -300,7 +300,7 @@ export class ProductService {
     },
     {
       id: 37,
-      catId: 6,
+      catId: 2,
       name: "Vizi disznó",
       image: "assets/img/vizi-diszno.jpg",
       price: 102000,
@@ -443,7 +443,7 @@ export class ProductService {
 
   fiveFromCategory(): Animal[] {
     return this.list
-      .filter(animal => animal.catId)
+      .filter(animal => animal.catId === Math.floor(Math.random() * 6) + 1)
       .sort(() => 0.5 - Math.random())
       .slice(0, 5);
   }
