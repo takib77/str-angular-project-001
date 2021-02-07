@@ -14,6 +14,7 @@ import { EndangeredPipe } from './pipe/endangered.pipe';
 import { AdminComponent } from './common/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { ProductService } from './service/product.service';
+import { SearchPipe } from './pipe/search.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProductService } from './service/product.service';
     EndangeredPipe,
     AdminComponent,
     DataEditorComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,

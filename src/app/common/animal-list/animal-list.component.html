@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div *ngFor="let animal of animalList">
+        <div *ngFor="let animal of animalList | search:searchPhraseString:'name'">
             <app-animal-card [animal]="animal"></app-animal-card>
         </div>
     </div>

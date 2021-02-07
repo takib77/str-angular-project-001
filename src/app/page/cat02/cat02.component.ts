@@ -10,11 +10,16 @@ import { ProductService } from 'src/app/service/product.service';
 export class Cat02Component implements OnInit {
 
   animalList: Animal[] = this.productService.list;
+  searchPhrase: string = '';
 
   constructor(
     private productService: ProductService
   ) { }
   ngOnInit(): void {
+  }
+
+  onChangeSearchPhrase(event: Event): void {
+    this.searchPhrase = (event.target as HTMLInputElement).value;
   }
 
 }
