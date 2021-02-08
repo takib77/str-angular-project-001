@@ -7,17 +7,16 @@ export interface AnimalCol {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TableService {
-
   tableCols: AnimalCol[] = [
     { key: 'id', text: '#', editable: false },
-    { key: 'catId', text: 'Category', editable: false },
+    { key: 'catId', text: 'Category', editable: true },
     { key: 'name', text: 'Animal Name', editable: true },
     { key: 'price', text: 'Price in HUF', editable: true },
-    { key: 'endangered', text: 'Endangered', editable: true }
+    { key: 'endangered', text: 'Endangered', editable: true },
   ];
 
-  constructor() { }
+  constructor() {}
 }

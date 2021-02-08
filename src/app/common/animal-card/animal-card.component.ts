@@ -5,17 +5,12 @@ import { ProductService } from 'src/app/service/product.service';
 @Component({
   selector: 'app-animal-card',
   templateUrl: './animal-card.component.html',
-  styleUrls: ['./animal-card.component.scss']
+  styleUrls: ['./animal-card.component.scss'],
 })
 export class AnimalCardComponent implements OnInit {
-
   @Input() animal: Animal = new Animal();
 
-  constructor(
-    private productService: ProductService
-  ) { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

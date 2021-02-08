@@ -1,6 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
+          <div class="d-flex mb-3">
+            <form class="form-inline">
+              <input (keyup)="onChangeSearchPhrase($event)" class="form-control" type="text" placeholder="Search animal...">
+            </form>
+          </div>
             <table class="table table-striped bg-light">
                 <thead>
                     <tr>
@@ -9,7 +14,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let animal of animalList$ | async">
+                    <tr *ngFor="let animal of animalList$ | async | search:searchPhrase:'name'" >
                         <td *ngFor="let col of animalcols">
                             <input class="form form-control text-primary" *ngIf="col.editable"
                                 [(ngModel)]="animal[col.key]" type="text">
