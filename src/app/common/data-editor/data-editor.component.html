@@ -1,18 +1,33 @@
 <div class="container">
-    <table class="table table-striped">
-        <thead>
-            <tr *ngFor="let animal of animalList$ | async">
-                <td *ngFor="let animal of animalList$ | async"> {{animal.id}}</td>
-                <td *ngFor="let animal of animalList$ | async"> {{animal.catId}}</td>
-                <td *ngFor="let animal of animalList$ | async"> {{animal.name}}</td>
-                <td *ngFor="let animal of animalList$ | async"> {{animal.price}}</td>
-                <td *ngFor="let animal of animalList$ | async"> {{animal.endangered}}</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-danger text-center" *ngFor="let col of animalcols">{{ col.text }}</th>
+                        <th class="text-danger">Buttons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let animal of animalList$ | async">
+                        <td *ngFor="let col of animalcols">
+                            <input class="form form-control text-primary" *ngIf="col.editable"
+                                [(ngModel)]="animal[col.key]" type="text">
+                            <span class="text-muted" *ngIf="!col.editable">{{animal[col.key]}}</span>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-info" (click)="onUpdateAnimal(animal)">
+                                    <i class="fa fa-refresh"></i>
+                                </button>
+                                <button class="btn btn-danger" (click)="onDeleteAnimal(animal)">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

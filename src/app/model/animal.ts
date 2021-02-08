@@ -1,6 +1,7 @@
 export class Animal {
+    [propname: string]: any;
     id: number = 0;
-    catId: number = 0;
+    catId: any = 0;
     name: string = '';
     image: string = '';
     price: number = 0;

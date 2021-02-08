@@ -7,7 +7,7 @@ export class EndangeredPipe implements PipeTransform {
 
   transform(value: boolean, result: string = 'Endangered'): any {
     if (value === true) { return result }
-    else if (value == false) { return `Not ${result.toLowerCase()}` };
+    else if (value === false) { return `Not ${result.toLowerCase()}` };
   }
 
 }

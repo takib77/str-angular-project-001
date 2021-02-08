@@ -18,4 +18,12 @@ export class ProductService {
     return this.http.get<Animal[]>(this.sourceURL);
   }
 
+  updateOneData(animal: Animal): Observable<Animal> {
+    return this.http.put<Animal>(`${this.sourceURL}/${animal.id}`, animal);
+  }
+
+  deleteOneData(animal: Animal): Observable<Animal> {
+    return this.http.delete<Animal>(`${this.sourceURL}/${animal.id}`);
+  }
+
 }

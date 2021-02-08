@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { AdminComponent } from './common/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { ProductService } from './service/product.service';
 import { SearchPipe } from './pipe/search.pipe';
+import { TableService } from './service/table.service';
+import { CategoryPipe } from './pipe/category.pipe';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,15 @@ import { SearchPipe } from './pipe/search.pipe';
     AdminComponent,
     DataEditorComponent,
     SearchPipe,
+    CategoryPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, TableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
