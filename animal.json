@@ -6,7 +6,7 @@
       "name": "Leveli Béka",
       "image": "assets/img/beka.jpg",
       "price": 10000,
-      "endangered": false
+      "endangered": "true"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "name": "Bivaly",
       "image": "assets/img/bivaly.jpg",
       "price": 150000,
-      "endangered": false
+      "endangered": "false"
     },
     {
       "id": 3,
@@ -70,7 +70,7 @@
       "name": "Orrszarvú",
       "image": "assets/img/orrszarvu.jpg",
       "price": 890000,
-      "endangered": false
+      "endangered": "true"
     },
     {
       "id": 10,
