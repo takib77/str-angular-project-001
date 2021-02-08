@@ -1,12 +1,12 @@
 <div class="container">
     <table class="table table-striped">
         <thead>
-            <tr>
-                <td *ngFor="let animal of animalList"> {{animal.id}}</td>
-                <td *ngFor="let animal of animalList"> {{animal.catId}}</td>
-                <td *ngFor="let animal of animalList"> {{animal.name}}</td>
-                <td *ngFor="let animal of animalList"> {{animal.price}}</td>
-                <td *ngFor="let animal of animalList"> {{animal.endangered}}</td>
+            <tr *ngFor="let animal of animalList$ | async">
+                <td *ngFor="let animal of animalList$ | async"> {{animal.id}}</td>
+                <td *ngFor="let animal of animalList$ | async"> {{animal.catId}}</td>
+                <td *ngFor="let animal of animalList$ | async"> {{animal.name}}</td>
+                <td *ngFor="let animal of animalList$ | async"> {{animal.price}}</td>
+                <td *ngFor="let animal of animalList$ | async"> {{animal.endangered}}</td>
             </tr>
         </thead>
         <tbody>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal } from 'src/app/model/animal';
 import { ProductService } from 'src/app/service/product.service';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cat02',
@@ -9,12 +11,14 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class Cat02Component implements OnInit {
 
-  animalList: Animal[] = this.productService.list;
+  animalList$: Observable<Animal[]> = this.productService.readAllData();
   searchPhrase: string = '';
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private http: HttpClient,
   ) { }
+
   ngOnInit(): void {
   }
 

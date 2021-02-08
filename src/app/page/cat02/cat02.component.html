@@ -8,6 +8,6 @@
     </div>
     <h2 class="text-center mt-5 mb-3">Our Animals</h2>
     <div class="row">
-        <app-animal-list [animalList]="animalList" [searchPhraseString]="searchPhrase"></app-animal-list>
+        <app-animal-list [animalList]="animalList$ | async" [searchPhraseString]="searchPhrase"></app-animal-list>
     </div>
 </div>
